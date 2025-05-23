@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGT101 Interactive Quiz</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .quiz-container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .chapter-title {
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        .question-type-title {
+            color: #007bff;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+        .question-block {
+            margin-bottom: 25px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .question-text {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: normal;
+        }
+        .options input[type="radio"], .options input[type="checkbox"] {
+            margin-right: 8px;
+        }
+        .show-answer-btn {
+            padding: 8px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+        .show-answer-btn:hover {
+            background-color: #218838;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            color: #0056b3;
+            font-weight: bold;
+        }
+        .citation {
+            font-size: 0.8em;
+            color: #6c757d;
+        }
+        .disclaimer {
+            background-color: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeeba;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 0;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+
+<div class="quiz-container">
+    <h1>MGT101 Interactive Quiz</h1>
+
+    <div class="disclaimer">
+        <strong>Disclaimer:</strong> The correct answers provided in this quiz are based on common management principles and interpretations of the test bank questions. For definitive accuracy, please refer to your official course materials or answer keys.
+    </div>
+
+    <h2 class="chapter-title">Chapter 1: Introduction to Management</h2>
+    <hr>
+    <h3 class="question-type-title">True or False Questions</h3>
+
+    <div class="question-block">
+        <p class="question-text">1) Planning function of management is concerned with stimulating people to be high performers. <span class="citation">[cite: 1]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch1_tf_1" value="true"> a) True <span class="citation">[cite: 2]</span></label>
+            <label><input type="radio" name="ch1_tf_1" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) False</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">2) Planning can also be described as delivering strategic value. <span class="citation">[cite: 3]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch1_tf_2" value="true"> a) True</label>
+            <label><input type="radio" name="ch1_tf_2" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) True</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">3) Today's leaders must be good at mobilizing and inspiring people to fully engage in work and contribute their ideas. <span class="citation">[cite: 4]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch1_tf_3" value="true"> a) True</label>
+            <label><input type="radio" name="ch1_tf_3" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) True</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">4) Effective managers should choose some management functions to do, and should not do the all four management functions. <span class="citation">[cite: 5]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch1_tf_4" value="true"> a) True</label>
+            <label><input type="radio" name="ch1_tf_4" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) False</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">5) Middle-level managers are senior executives responsible for the overall management and effectiveness of the organization. <span class="citation">[cite: 6]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch1_tf_5" value="true"> a) True</label>
+            <label><input type="radio" name="ch1_tf_5" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) False</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">6) Team leaders are employees who are responsible for facilitating successful team performance. <span class="citation">[cite: 7]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch1_tf_6" value="true"> a) True</label>
+            <label><input type="radio" name="ch1_tf_6" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) True</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">7) Web design skills are considered technical skills.</p>
+        <div class="options">
+            <label><input type="radio" name="ch1_tf_7" value="true"> a) True</label>
+            <label><input type="radio" name="ch1_tf_7" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) True</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">8) Frontline manager should posses medium decision skills. <span class="citation">[cite: 8]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch1_tf_8" value="true"> a) True</label>
+            <label><input type="radio" name="ch1_tf_8" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) True</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">9) Cost Competitiveness requires efficiency.</p>
+        <div class="options">
+            <label><input type="radio" name="ch1_tf_9" value="true"> a) True</label>
+            <label><input type="radio" name="ch1_tf_9" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) True</div>
+    </div>
+
+    <hr>
+    <h3 class="question-type-title">Multiple Choice Questions <span class="citation">[cite: 9]</span></h3>
+
+    <div class="question-block">
+        <p class="question-text">1) _________ describes systematically making decisions about which goals and activities to pursue. <span class="citation">[cite: 9]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch1_mc_1" value="a"> a) Planning</label>
+            <label><input type="radio" name="ch1_mc_1" value="b"> b) Organizing</label>
+            <label><input type="radio" name="ch1_mc_1" value="c"> c) Leading</label>
+            <label><input type="radio" name="ch1_mc_1" value="d"> d) Controlling</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) Planning</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">2) _________ describes assembling and coordinating the resources needed to achieve goals. <span class="citation">[cite: 10]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch1_mc_2" value="a"> a) Planning <span class="citation">[cite: 10]</span></label>
+            <label><input type="radio" name="ch1_mc_2" value="b"> b) Organizing</label>
+            <label><input type="radio" name="ch1_mc_2" value="c"> c) Leading</label>
+            <label><input type="radio" name="ch1_mc_2" value="d"> d) Controlling</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) Organizing</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">3) _________ was traditionally done top-down, now it is a dynamic and continual process throughout the organization.</p>
+        <div class="options">
+            <label><input type="radio" name="ch1_mc_3" value="a"> a) Planning</label>
+            <label><input type="radio" name="ch1_mc_3" value="b"> b) Organizing</label>
+            <label><input type="radio" name="ch1_mc_3" value="c"> c) Leading</label>
+            <label><input type="radio" name="ch1_mc_3" value="d"> d) Controlling</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) Planning</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">4) Today's leaders must be good at mobilizing and inspiring people to fully engage in work and contribute their ideas. This describes the management function of _________. <span class="citation">[cite: 11]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch1_mc_4" value="a"> a) Planning</label>
+            <label><input type="radio" name="ch1_mc_4" value="b"> b) Organizing</label>
+            <label><input type="radio" name="ch1_mc_4" value="c"> c) Leading</label>
+            <label><input type="radio" name="ch1_mc_4" value="d"> d) Controlling</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: c) Leading</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">5) _________ are also called tactical managers. <span class="citation">[cite: 12]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch1_mc_5" value="a"> a) Top-Level Managers</label>
+            <label><input type="radio" name="ch1_mc_5" value="b"> b) Middle-Level Managers</label>
+            <label><input type="radio" name="ch1_mc_5" value="c"> c) Frontline Managers</label>
+            <label><input type="radio" name="ch1_mc_5" value="d"> d) Team Leader</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) Middle-Level Managers</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">6) _________ represent the link between management and non-management personnel. <span class="citation">[cite: 13]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch1_mc_6" value="a"> a) Top-Level Managers</label>
+            <label><input type="radio" name="ch1_mc_6" value="b"> b) Middle-Level Managers</label>
+            <label><input type="radio" name="ch1_mc_6" value="c"> c) Frontline Managers</label>
+            <label><input type="radio" name="ch1_mc_6" value="d"> d) Team Leader</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: c) Frontline Managers</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">7) _________ serve as liaison with other stakeholders. <span class="citation">[cite: 14]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch1_mc_7" value="a"> a) Top-Level Managers</label>
+            <label><input type="radio" name="ch1_mc_7" value="b"> b) Middle-Level Managers</label>
+            <label><input type="radio" name="ch1_mc_7" value="c"> c) Frontline Managers</label>
+            <label><input type="radio" name="ch1_mc_7" value="d"> d) Team Leaders</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) Top-Level Managers</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">8) The ability to identify and resolve problems for the benefit of the organization and its members. <span class="citation">[cite: 15]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch1_mc_8" value="a"> a) Technical skills</label>
+            <label><input type="radio" name="ch1_mc_8" value="b"> b) Emotional intelligence</label>
+            <label><input type="radio" name="ch1_mc_8" value="c"> c) Conceptual and decision skills</label>
+            <label><input type="radio" name="ch1_mc_8" value="d"> d) Communication skills</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: c) Conceptual and decision skills</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">9) Which level of management should possess high levels of communication skills, high level of decision skills, and low levels of technical skills? <span class="citation">[cite: 16]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch1_mc_9" value="a"> a) Top-Level Managers</label>
+            <label><input type="radio" name="ch1_mc_9" value="b"> b) Middle-Level Managers</label>
+            <label><input type="radio" name="ch1_mc_9" value="c"> c) Frontline Managers</label>
+            <label><input type="radio" name="ch1_mc_9" value="d"> d) Team Leaders</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) Top-Level Managers</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">10) _________ is set of practices aimed at discovering and harnessing an organization's intellectual resources. <span class="citation">[cite: 17, 18]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch1_mc_10" value="a"> a) Human resources management</label>
+            <label><input type="radio" name="ch1_mc_10" value="b"> b) Knowledge management</label>
+            <label><input type="radio" name="ch1_mc_10" value="c"> c) Strategic management</label>
+            <label><input type="radio" name="ch1_mc_10" value="d"> d) Financial management</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) Knowledge management</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">11) _________ source of competition describes continually meeting the changing needs of customers to establish mutually beneficial long-term relationships. <span class="citation">[cite: 19]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch1_mc_11" value="a"> a) Speed</label>
+            <label><input type="radio" name="ch1_mc_11" value="b"> b) Quality</label>
+            <label><input type="radio" name="ch1_mc_11" value="c"> c) Innovation</label>
+            <label><input type="radio" name="ch1_mc_11" value="d"> d) Service</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: d) Service</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">12) _________ source of competition means reducing resource use and waste, especially for polluting and nonrenewable resources. <span class="citation">[cite: 20]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch1_mc_12" value="a"> a) Sustainability</label>
+            <label><input type="radio" name="ch1_mc_12" value="b"> b) Quality</label>
+            <label><input type="radio" name="ch1_mc_12" value="c"> c) Innovation</label>
+            <label><input type="radio" name="ch1_mc_12" value="d"> d) Service</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) Sustainability</div>
+    </div>
+
+    <h2 class="chapter-title">Chapter 2: Planning and Decision Making <span class="citation">[cite: 21]</span></h2>
+    <hr>
+    <h3 class="question-type-title">True or False Questions</h3>
+
+    <div class="question-block">
+        <p class="question-text">1) Planning is a conscious, systematic process of making decisions about goals and activities that an individual, group, work unit, or organization will pursue in the future. <span class="citation">[cite: 21]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch2_tf_1" value="true"> a) True <span class="citation">[cite: 22]</span></label>
+            <label><input type="radio" name="ch2_tf_1" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) True</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">2) The planning process is a cycle. <span class="citation">[cite: 23]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch2_tf_2" value="true"> a) True</label>
+            <label><input type="radio" name="ch2_tf_2" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) True</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">3) The planning process starts with generating alternative goals and plans. <span class="citation">[cite: 24]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch2_tf_3" value="true"> a) True</label>
+            <label><input type="radio" name="ch2_tf_3" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) False</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">4) Situational analysis focuses on internal forces and examines external influences. <span class="citation">[cite: 25]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch2_tf_4" value="true"> a) True</label>
+            <label><input type="radio" name="ch2_tf_4" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) True</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">5) Plans are targets or ends that a manager wants to reach, while goals are actions or means the manager intends to use to achieve plans. <span class="citation">[cite: 26]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch2_tf_5" value="true"> a) True</label>
+            <label><input type="radio" name="ch2_tf_5" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) False</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">6) Potential scenario is a narrative that describes a particular set of future conditions. <span class="citation">[cite: 27]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch2_tf_6" value="true"> a) True</label>
+            <label><input type="radio" name="ch2_tf_6" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) True</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">7) Potential scenario helps anticipate and manage crises. <span class="citation">[cite: 28]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch2_tf_7" value="true"> a) True</label>
+            <label><input type="radio" name="ch2_tf_7" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) True</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">8) Successful implementation requires a plan to be linked to the budget and reward systems. <span class="citation">[cite: 29]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch2_tf_8" value="true"> a) True</label>
+            <label><input type="radio" name="ch2_tf_8" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) True</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">9) Managers do plan at top-level management only. <span class="citation">[cite: 30]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch2_tf_9" value="true"> a) True</label>
+            <label><input type="radio" name="ch2_tf_9" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) False</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">10) Operational planning is a set of procedures for translating broad strategic goals and plans into specific goals and plans that are relevant to a distinct portion of the organization, such as a functional area like marketing. <span class="citation">[cite: 31]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch2_tf_10" value="true"> a) True</label>
+            <label><input type="radio" name="ch2_tf_10" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) True</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">11) Optimizing means choosing an option that is acceptable, although not necessarily the best or perfect.</p>
+        <div class="options">
+            <label><input type="radio" name="ch2_tf_11" value="true"> a) True</label>
+            <label><input type="radio" name="ch2_tf_11" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) False</div>
+    </div>
+
+    <hr>
+    <h3 class="question-type-title">Multiple Choice Questions <span class="citation">[cite: 32]</span></h3>
+
+    <div class="question-block">
+        <p class="question-text">1) _________ is a process planners use, within time and resource constraints, to gather, interpret, and summarize all information relevant to the planning issue under consideration. <span class="citation">[cite: 32, 33]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch2_mc_1" value="a"> a) Situational analysis <span class="citation">[cite: 33]</span></label>
+            <label><input type="radio" name="ch2_mc_1" value="b"> b) Generating alternative goals and plans</label>
+            <label><input type="radio" name="ch2_mc_1" value="c"> c) Contingency plan</label>
+            <label><input type="radio" name="ch2_mc_1" value="d"> d) Evaluating goals and plans</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) Situational analysis</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">2) Which step in the planning process should stress creativity and encourage managers and employees to think broadly? <span class="citation">[cite: 34]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch2_mc_2" value="a"> a) Situational analysis</label>
+            <label><input type="radio" name="ch2_mc_2" value="b"> b) Generating alternative goals and plans</label>
+            <label><input type="radio" name="ch2_mc_2" value="c"> c) Selecting goals and plans</label>
+            <label><input type="radio" name="ch2_mc_2" value="d"> d) Evaluating goals and plans</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) Generating alternative goals and plans</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">3) _________ focuses on achieving non-repeating goals. <span class="citation">[cite: 35]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch2_mc_3" value="a"> a) Single use plan</label>
+            <label><input type="radio" name="ch2_mc_3" value="b"> b) Standing plan</label>
+            <label><input type="radio" name="ch2_mc_3" value="c"> c) Contingency plan</label>
+            <label><input type="radio" name="ch2_mc_3" value="d"> d) No answer is correct</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) Single use plan</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">4) _________ is designed to accomplish an enduring set of goals. <span class="citation">[cite: 36]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch2_mc_4" value="a"> a) Single use plan</label>
+            <label><input type="radio" name="ch2_mc_4" value="b"> b) Standing plan</label>
+            <label><input type="radio" name="ch2_mc_4" value="c"> c) Contingency plan</label>
+            <label><input type="radio" name="ch2_mc_4" value="d"> d) No answer is correct</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) Standing plan</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">5) _________ specifies actions when initial plans fail or events in the external environment create sudden change. <span class="citation">[cite: 37]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch2_mc_5" value="a"> a) Single use plan</label>
+            <label><input type="radio" name="ch2_mc_5" value="b"> b) Standing plan</label>
+            <label><input type="radio" name="ch2_mc_5" value="c"> c) Contingency plan</label>
+            <label><input type="radio" name="ch2_mc_5" value="d"> d) No answer is correct</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: c) Contingency plan</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">6) Which step in the planning process managers must prioritize goals and even eliminate some. <span class="citation">[cite: 38]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch2_mc_6" value="a"> a) Situational analysis</label>
+            <label><input type="radio" name="ch2_mc_6" value="b"> b) Generating alternative goals and plans</label>
+            <label><input type="radio" name="ch2_mc_6" value="c"> c) Selecting goals and plans</label>
+            <label><input type="radio" name="ch2_mc_6" value="d"> d) Evaluating goals and plans</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: c) Selecting goals and plans</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">7) In _________ step of planning, managers and employees must understand the plan, have the resources to implement it, and be motivated to do so. <span class="citation">[cite: 39]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch2_mc_7" value="a"> a) situational analysis</label>
+            <label><input type="radio" name="ch2_mc_7" value="b"> b) generating alternative goals and plans</label>
+            <label><input type="radio" name="ch2_mc_7" value="c"> c) implementation</label>
+            <label><input type="radio" name="ch2_mc_7" value="d"> d) evaluating goals and plans</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: c) implementation</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">8) Which of the following does describe major targets or end results relating to the organization's long-term survival, value, and growth? <span class="citation">[cite: 40]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch2_mc_8" value="a"> a) Strategic planning</label>
+            <label><input type="radio" name="ch2_mc_8" value="b"> b) Strategic goals</label>
+            <label><input type="radio" name="ch2_mc_8" value="c"> c) Strategy</label>
+            <label><input type="radio" name="ch2_mc_8" value="d"> d) Tactical planning</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) Strategic goals</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">9) _________ is the process of identifying the specific procedures and processes required at lower levels of the organization.</p>
+        <div class="options">
+            <label><input type="radio" name="ch2_mc_9" value="a"> a) Strategic planning</label>
+            <label><input type="radio" name="ch2_mc_9" value="b"> b) Strategic goals</label>
+            <label><input type="radio" name="ch2_mc_9" value="c"> c) Operational planning</label>
+            <label><input type="radio" name="ch2_mc_9" value="d"> d) Tactical planning</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: c) Operational planning</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">10) Which management level is responsible for tactical planning? <span class="citation">[cite: 41]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch2_mc_10" value="a"> a) Top-level management</label>
+            <label><input type="radio" name="ch2_mc_10" value="b"> b) Middle-level management</label>
+            <label><input type="radio" name="ch2_mc_10" value="c"> c) Frontline-level management</label>
+            <label><input type="radio" name="ch2_mc_10" value="d"> d) Team leaders</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) Middle-level management</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">11) There are _________ stages of formal decision making. <span class="citation">[cite: 42]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch2_mc_11" value="a"> a) four</label>
+            <label><input type="radio" name="ch2_mc_11" value="b"> b) five</label>
+            <label><input type="radio" name="ch2_mc_11" value="c"> c) six</label>
+            <label><input type="radio" name="ch2_mc_11" value="d"> d) seven</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: c) six</div>
+    </div>
+
+    <h2 class="chapter-title">Chapter 3: Organizing for Success <span class="citation">[cite: 43]</span></h2>
+    <hr>
+    <h3 class="question-type-title">True or False Questions</h3>
+
+    <div class="question-block">
+        <p class="question-text">1) Organization chart is the reporting structure and division of labor in an organization. <span class="citation">[cite: 44]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch3_tf_1" value="true"> a) True</label>
+            <label><input type="radio" name="ch3_tf_1" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) True</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">2) Mechanistic organization is an organizational form that emphasizes flexibility. <span class="citation">[cite: 45]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch3_tf_2" value="true"> a) True</label>
+            <label><input type="radio" name="ch3_tf_2" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) False</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">3) Organic Structure is a form of organization that seeks to maximize internal efficiency. <span class="citation">[cite: 46]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch3_tf_3" value="true"> a) True</label>
+            <label><input type="radio" name="ch3_tf_3" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) False</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">4) Employee Interdependence in organic organizational structure is limited. <span class="citation">[cite: 47]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch3_tf_4" value="true"> a) True</label>
+            <label><input type="radio" name="ch3_tf_4" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) False</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">5) In private enterprises, the owners have ultimate authority. <span class="citation">[cite: 48]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch3_tf_5" value="true"> a) True</label>
+            <label><input type="radio" name="ch3_tf_5" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) True</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">6) Authority is not always position-dependent, as informal authority is also important. <span class="citation">[cite: 49]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch3_tf_6" value="true"> a) True</label>
+            <label><input type="radio" name="ch3_tf_6" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) True</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">7) Narrow span of control results in flat organization with few reporting levels. <span class="citation">[cite: 50]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch3_tf_7" value="true"> a) True</label>
+            <label><input type="radio" name="ch3_tf_7" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) False</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">8) Delegation promotes subordinates' sense of importance and commitment.</p>
+        <div class="options">
+            <label><input type="radio" name="ch3_tf_8" value="true"> a) True</label>
+            <label><input type="radio" name="ch3_tf_8" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) True</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">9) Delegation wastes managers' time. <span class="citation">[cite: 51]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch3_tf_9" value="true"> a) True</label>
+            <label><input type="radio" name="ch3_tf_9" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) False</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">10) Centralized organization is an organization in which high-level executives make most decisions and pass them down to lower levels for implementation. <span class="citation">[cite: 52]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch3_tf_10" value="true"> a) True</label>
+            <label><input type="radio" name="ch3_tf_10" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) True</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">11) Centralized organization allows people to take faster action.</p>
+        <div class="options">
+            <label><input type="radio" name="ch3_tf_11" value="true"> a) True</label>
+            <label><input type="radio" name="ch3_tf_11" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) False</div>
+    </div>
+
+    <hr>
+    <h3 class="question-type-title">Multiple Choice Questions <span class="citation">[cite: 53]</span></h3>
+
+    <div class="question-block">
+        <p class="question-text">1) _________ is the legitimate right to make decisions and tell other people what to do. <span class="citation">[cite: 53, 54]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch3_mc_1" value="a"> a) Responsibility</label>
+            <label><input type="radio" name="ch3_mc_1" value="b"> b) Accountability</label>
+            <label><input type="radio" name="ch3_mc_1" value="c"> c) Authority</label>
+            <label><input type="radio" name="ch3_mc_1" value="d"> d) Delegation</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: c) Authority</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">2) The number of subordinates who report directly to an executive or supervisor. <span class="citation">[cite: 55]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch3_mc_2" value="a"> a) Organizational structure</label>
+            <label><input type="radio" name="ch3_mc_2" value="b"> b) Organizational chart</label>
+            <label><input type="radio" name="ch3_mc_2" value="c"> c) Management level</label>
+            <label><input type="radio" name="ch3_mc_2" value="d"> d) Span of control</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: d) Span of control</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">3) The assignment of new or additional responsibilities to a subordinate. <span class="citation">[cite: 56]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch3_mc_3" value="a"> a) Responsibility</label>
+            <label><input type="radio" name="ch3_mc_3" value="b"> b) Accountability</label>
+            <label><input type="radio" name="ch3_mc_3" value="c"> c) Authority</label>
+            <label><input type="radio" name="ch3_mc_3" value="d"> d) Delegation</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: d) Delegation</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">4) _________ means that a person is assigned a task to carry out. <span class="citation">[cite: 57]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch3_mc_4" value="a"> a) Responsibility</label>
+            <label><input type="radio" name="ch3_mc_4" value="b"> b) Accountability</label>
+            <label><input type="radio" name="ch3_mc_4" value="c"> c) Authority</label>
+            <label><input type="radio" name="ch3_mc_4" value="d"> d) Delegation</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) Responsibility</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">5) _________ means the subordinate's manager has right to expect subordinate to perform the job, and right to take corrective action if the subordinate fails to do so. <span class="citation">[cite: 58]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch3_mc_5" value="a"> a) Responsibility</label>
+            <label><input type="radio" name="ch3_mc_5" value="b"> b) Accountability</label>
+            <label><input type="radio" name="ch3_mc_5" value="c"> c) Authority</label>
+            <label><input type="radio" name="ch3_mc_5" value="d"> d) Delegation</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) Accountability</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">6) _________ is an organizational structure that separates people into groups, or departments, based on a particular set of criteria. <span class="citation">[cite: 59]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch3_mc_6" value="a"> a) Departmentalization</label>
+            <label><input type="radio" name="ch3_mc_6" value="b"> b) Fragmentation</label>
+            <label><input type="radio" name="ch3_mc_6" value="c"> c) Delegation</label>
+            <label><input type="radio" name="ch3_mc_6" value="d"> d) Authorization</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) Departmentalization</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">7) _________ is departmentalization around specialized activities such as production, marketing, and human resources. <span class="citation">[cite: 60]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch3_mc_7" value="a"> a) Matrix Organization</label>
+            <label><input type="radio" name="ch3_mc_7" value="b"> b) Divisional Organization</label>
+            <label><input type="radio" name="ch3_mc_7" value="c"> c) Functional organization</label>
+            <label><input type="radio" name="ch3_mc_7" value="d"> d) Network Organization</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: c) Functional organization</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">8) _________ is departmentalization that groups units around products, customers, or geographic regions. <span class="citation">[cite: 61]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch3_mc_8" value="a"> a) Matrix Organization</label>
+            <label><input type="radio" name="ch3_mc_8" value="b"> b) Divisional Organization</label>
+            <label><input type="radio" name="ch3_mc_8" value="c"> c) Functional organization</label>
+            <label><input type="radio" name="ch3_mc_8" value="d"> d) Network Organization</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) Divisional Organization</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">9) _________ is an organization composed of dual reporting relationships in which some managers report to two superiors-a functional manager and a divisional manager. <span class="citation">[cite: 62, 63]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch3_mc_9" value="a"> a) Matrix Organization <span class="citation">[cite: 63]</span></label>
+            <label><input type="radio" name="ch3_mc_9" value="b"> b) Divisional Organization</label>
+            <label><input type="radio" name="ch3_mc_9" value="c"> c) Functional organization</label>
+            <label><input type="radio" name="ch3_mc_9" value="d"> d) Network Organization</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) Matrix Organization</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">10) _________ is a collection of independent, mostly single-function firms that collaborate on a good or service. <span class="citation">[cite: 64]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch3_mc_10" value="a"> a) Matrix Organization</label>
+            <label><input type="radio" name="ch3_mc_10" value="b"> b) Divisional Organization</label>
+            <label><input type="radio" name="ch3_mc_10" value="c"> c) Functional organization</label>
+            <label><input type="radio" name="ch3_mc_10" value="d"> d) Network Organization</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: d) Network Organization</div>
+    </div>
+
+    <h2 class="chapter-title">Chapter 4: Leadership <span class="citation">[cite: 95]</span></h2>
+    <hr>
+    <h3 class="question-type-title">True or False Questions</h3>
+
+    <div class="question-block">
+        <p class="question-text">1) Challenging the process is a key leadership behavior. <span class="citation">[cite: 96]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch4_tf_1" value="true"> a) True</label>
+            <label><input type="radio" name="ch4_tf_1" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) True</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">2) One of the differences between managers and leaders is that managers inspire people to attain the vision, while leaders monitor results. <span class="citation">[cite: 97]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch4_tf_2" value="true"> a) True</label>
+            <label><input type="radio" name="ch4_tf_2" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) False</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">3) Supervisory leadership describes behavior that gives purpose and meaning to organizations, envisioning and creating a positive future. <span class="citation">[cite: 98]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch4_tf_3" value="true"> a) True</label>
+            <label><input type="radio" name="ch4_tf_3" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) False</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">4) Organizations can succeed or fail because of how well followers follow. <span class="citation">[cite: 99]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch4_tf_4" value="true"> a) True</label>
+            <label><input type="radio" name="ch4_tf_4" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) True</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">5) A legitimate situation can be a source of leadership power. <span class="citation">[cite: 100]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch4_tf_5" value="true"> a) True</label>
+            <label><input type="radio" name="ch4_tf_5" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) False</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">6) Task performance behaviors are actions taken to ensure the satisfaction of group members, develop and maintain harmonious work relationships, and preserve social stability. <span class="citation">[cite: 101]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch4_tf_6" value="true"> a) True</label>
+            <label><input type="radio" name="ch4_tf_6" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) False</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">7) Autocratic leadership is one of the contemporary perspectives on leadership. <span class="citation">[cite: 102]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch4_tf_7" value="true"> a) True</label>
+            <label><input type="radio" name="ch4_tf_7" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) False</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">8) Charismatic Leaders are characterized by their ability to inspire their followers. <span class="citation">[cite: 103]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch4_tf_8" value="true"> a) True</label>
+            <label><input type="radio" name="ch4_tf_8" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) True</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">9) Transformational leaders revitalize organizations.</p>
+        <div class="options">
+            <label><input type="radio" name="ch4_tf_9" value="true"> a) True</label>
+            <label><input type="radio" name="ch4_tf_9" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) True</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">10) The transactional leadership model is based on an exchange or transaction. <span class="citation">[cite: 104]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch4_tf_10" value="true"> a) True</label>
+            <label><input type="radio" name="ch4_tf_10" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) True</div>
+    </div>
+
+    <hr>
+    <h3 class="question-type-title">Multiple Choice Questions <span class="citation">[cite: 105]</span></h3>
+
+    <div class="question-block">
+        <p class="question-text">1) Which of the following is functioned exclusively by leaders, not managers? <span class="citation">[cite: 105]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch4_mc_1" value="a"> a) Dealing with day-to-day complexities of organization. <span class="citation">[cite: 106]</span></label>
+            <label><input type="radio" name="ch4_mc_1" value="b"> b) Planning and budgeting routines. <span class="citation">[cite: 106]</span></label>
+            <label><input type="radio" name="ch4_mc_1" value="c"> c) Effectively orchestrating important change <span class="citation">[cite: 107]</span></label>
+            <label><input type="radio" name="ch4_mc_1" value="d"> d) Structuring the organization <span class="citation">[cite: 107]</span></label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: c) Effectively orchestrating important change</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">2) _________ is the ability to influence others.</p>
+        <div class="options">
+            <label><input type="radio" name="ch4_mc_2" value="a"> a) Authority</label>
+            <label><input type="radio" name="ch4_mc_2" value="b"> b) Management</label>
+            <label><input type="radio" name="ch4_mc_2" value="c"> c) Delegation</label>
+            <label><input type="radio" name="ch4_mc_2" value="d"> d) Power</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: d) Power</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">3) _________ is a leadership perspective that attempts to determine the personal characteristics that great leaders share. <span class="citation">[cite: 108]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch4_mc_3" value="a"> a) Trait approach</label>
+            <label><input type="radio" name="ch4_mc_3" value="b"> b) Behavioral approach</label>
+            <label><input type="radio" name="ch4_mc_3" value="c"> c) Situational approach</label>
+            <label><input type="radio" name="ch4_mc_3" value="d"> d) Laissez-faire</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) Trait approach</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">4) _________ is a leadership perspective that attempts to identify what good leaders do-that is, what behaviors they exhibit. <span class="citation">[cite: 109]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch4_mc_4" value="a"> a) Trait approach</label>
+            <label><input type="radio" name="ch4_mc_4" value="b"> b) Behavioral approach</label>
+            <label><input type="radio" name="ch4_mc_4" value="c"> c) Situational approach</label>
+            <label><input type="radio" name="ch4_mc_4" value="d"> d) Laissez-faire</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) Behavioral approach</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">5) _________ leadership is a form of leadership in which the leader makes decisions on his or her own and then announces those decisions to the group. <span class="citation">[cite: 110]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch4_mc_5" value="a"> a) Autocratic</label>
+            <label><input type="radio" name="ch4_mc_5" value="b"> b) Transformational</label>
+            <label><input type="radio" name="ch4_mc_5" value="c"> c) Democratic</label>
+            <label><input type="radio" name="ch4_mc_5" value="d"> d) Laissez-faire</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) Autocratic</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">6) _________ leadership is a form of leadership in which the leader solicits input from subordinates.</p>
+        <div class="options">
+            <label><input type="radio" name="ch4_mc_6" value="a"> a) Autocratic</label>
+            <label><input type="radio" name="ch4_mc_6" value="b"> b) Transformational</label>
+            <label><input type="radio" name="ch4_mc_6" value="c"> c) Democratic</label>
+            <label><input type="radio" name="ch4_mc_6" value="d"> d) Laissez-faire</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: c) Democratic</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">7) _________ is a leadership philosophy characterized by an absence of managerial decision making. <span class="citation">[cite: 111]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch4_mc_7" value="a"> a) Autocratic</label>
+            <label><input type="radio" name="ch4_mc_7" value="b"> b) Transformational</label>
+            <label><input type="radio" name="ch4_mc_7" value="c"> c) Democratic</label>
+            <label><input type="radio" name="ch4_mc_7" value="d"> d) Laissez-faire</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: d) Laissez-faire</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">8) _________ is a leadership perspective proposing that universally important traits and behaviors do not exist.</p>
+        <div class="options">
+            <label><input type="radio" name="ch4_mc_8" value="a"> a) Trait approach</label>
+            <label><input type="radio" name="ch4_mc_8" value="b"> b) Behavioral approach</label>
+            <label><input type="radio" name="ch4_mc_8" value="c"> c) Situational approach</label>
+            <label><input type="radio" name="ch4_mc_8" value="d"> d) Laissez-faire</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: c) Situational approach</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">9) _________ leader is a person who is dominant, self-confident, convinced of the moral righteousness of his beliefs, and able to arouse a sense of excitement and adventure in followers. <span class="citation">[cite: 112, 113]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch4_mc_9" value="a"> a) Transactional</label>
+            <label><input type="radio" name="ch4_mc_9" value="b"> b) Transformational</label>
+            <label><input type="radio" name="ch4_mc_9" value="c"> c) Democratic</label>
+            <label><input type="radio" name="ch4_mc_9" value="d"> d) Charismatic <span class="citation">[cite: 113]</span></label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: d) Charismatic</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">10) _________ leader motivates people to transcend their personal interests for the good of the group.</p>
+        <div class="options">
+            <label><input type="radio" name="ch4_mc_10" value="a"> a) Transactional</label>
+            <label><input type="radio" name="ch4_mc_10" value="b"> b) Transformational</label>
+            <label><input type="radio" name="ch4_mc_10" value="c"> c) Democratic</label>
+            <label><input type="radio" name="ch4_mc_10" value="d"> d) Charismatic</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) Transformational</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">11) _________ leader relies on rewards and punishments to achieve optimal job performance from subordinates. <span class="citation">[cite: 114]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch4_mc_11" value="a"> a) Transactional</label>
+            <label><input type="radio" name="ch4_mc_11" value="b"> b) Transformational</label>
+            <label><input type="radio" name="ch4_mc_11" value="c"> c) Democratic</label>
+            <label><input type="radio" name="ch4_mc_11" value="d"> d) Charismatic</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) Transactional</div>
+    </div>
+
+    <h2 class="chapter-title">Chapter 5: Communicating <span class="citation">[cite: 65]</span></h2>
+    <hr>
+    <h3 class="question-type-title">True or False Questions</h3>
+
+    <div class="question-block">
+        <p class="question-text">1) Communication is defined as the transmission of information and meaning from one party to another through the use of shared symbols. <span class="citation">[cite: 66]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch5_tf_1" value="true"> a) True</label>
+            <label><input type="radio" name="ch5_tf_1" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) True</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">2) In one-way communication, the receiver provides feedback to the sender. <span class="citation">[cite: 67]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch5_tf_2" value="true"> a) True</label>
+            <label><input type="radio" name="ch5_tf_2" value="false"> b) False <span class="citation">[cite: 67]</span></label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) False</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">3) Fatigue is an example of noise in communication. <span class="citation">[cite: 68]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch5_tf_3" value="true"> a) True</label>
+            <label><input type="radio" name="ch5_tf_3" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) True</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">4) A manager sending an email to a subordinate without expecting a response is an example of two-way communication. <span class="citation">[cite: 69]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch5_tf_4" value="true"> a) True</label>
+            <label><input type="radio" name="ch5_tf_4" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) False</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">5) Decoding is the process of interpreting the message. <span class="citation">[cite: 70]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch5_tf_5" value="true"> a) True</label>
+            <label><input type="radio" name="ch5_tf_5" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) True</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">6) Encoding, decoding, and transmission are all potential sources of communication pitfalls. <span class="citation">[cite: 71]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch5_tf_6" value="true"> a) True</label>
+            <label><input type="radio" name="ch5_tf_6" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) True</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">7) Downward communication flows from lower to higher levels in an organization. <span class="citation">[cite: 72]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch5_tf_7" value="true"> a) True</label>
+            <label><input type="radio" name="ch5_tf_7" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) False</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">8) Downward communication can be hindered by information overload. <span class="citation">[cite: 73]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch5_tf_8" value="true"> a) True</label>
+            <label><input type="radio" name="ch5_tf_8" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) True</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">9) Horizontal communication is always informal and spontaneous. <span class="citation">[cite: 74]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch5_tf_9" value="true"> a) True</label>
+            <label><input type="radio" name="ch5_tf_9" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) False</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">10) Horizontal communication occurs between people at different levels of the organizational hierarchy. <span class="citation">[cite: 75]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch5_tf_10" value="true"> a) True</label>
+            <label><input type="radio" name="ch5_tf_10" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) False</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">11) Informal communication is always unreliable and should be avoided. <span class="citation">[cite: 76]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch5_tf_11" value="true"> a) True</label>
+            <label><input type="radio" name="ch5_tf_11" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) False</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">12) The grapevine is a formal communication channel.</p>
+        <div class="options">
+            <label><input type="radio" name="ch5_tf_12" value="true"> a) True</label>
+            <label><input type="radio" name="ch5_tf_12" value="false"> b) False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) False</div>
+    </div>
+
+    <hr>
+    <h3 class="question-type-title">Multiple Choice Questions <span class="citation">[cite: 77]</span></h3>
+
+    <div class="question-block">
+        <p class="question-text">1) One-way communication is characterized by: <span class="citation">[cite: 77]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch5_mc_1" value="a"> a) A feedback loop from the receiver to the sender.</label>
+            <label><input type="radio" name="ch5_mc_1" value="b"> b) Information flowing in both directions.</label>
+            <label><input type="radio" name="ch5_mc_1" value="c"> c) Information flowing only from the sender to the receiver. <span class="citation">[cite: 78]</span></label>
+            <label><input type="radio" name="ch5_mc_1" value="d"> d) A two-way conversation.</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: c) Information flowing only from the sender to the receiver.</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">2) The process of converting thoughts or ideas into a message is known as: <span class="citation">[cite: 79]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch5_mc_2" value="a"> a) Decoding</label>
+            <label><input type="radio" name="ch5_mc_2" value="b"> b) Encoding</label>
+            <label><input type="radio" name="ch5_mc_2" value="c"> c) Feedback</label>
+            <label><input type="radio" name="ch5_mc_2" value="d"> d) Perceived meaning</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) Encoding</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">3) The difference between the intended meaning and the perceived meaning is often caused by:</p>
+        <div class="options">
+            <label><input type="radio" name="ch5_mc_3" value="a"> a) Effective encoding</label>
+            <label><input type="radio" name="ch5_mc_3" value="b"> b) Noise in the communication channel</label>
+            <label><input type="radio" name="ch5_mc_3" value="c"> c) Clear decoding</label>
+            <label><input type="radio" name="ch5_mc_3" value="d"> d) Strong feedback</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) Noise in the communication channel</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">4) An example of two-way communication is: <span class="citation">[cite: 80]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch5_mc_4" value="a"> a) A manager sending an email to a subordinate without expecting a reply.</label>
+            <label><input type="radio" name="ch5_mc_4" value="b"> b) A written report.</label>
+            <label><input type="radio" name="ch5_mc_4" value="c"> c) A conversation between two people. <span class="citation">[cite: 80]</span></label>
+            <label><input type="radio" name="ch5_mc_4" value="d"> d) A public announcement.</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: c) A conversation between two people.</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">5) An important function of downward communication is to: <span class="citation">[cite: 81]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch5_mc_5" value="a"> a) Gather feedback from employees.</label>
+            <label><input type="radio" name="ch5_mc_5" value="b"> b) Help employees identify with the company. <span class="citation">[cite: 81]</span></label>
+            <label><input type="radio" name="ch5_mc_5" value="c"> c) Facilitate communication between peers.</label>
+            <label><input type="radio" name="ch5_mc_5" value="d"> d) Resolve conflicts between departments. <span class="citation">[cite: 82]</span></label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: b) Help employees identify with the company. (Also, to provide instructions and guidance - see Q7)</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">6) Which of the following is NOT a potential difficulty associated with downward communication? <span class="citation">[cite: 83]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch5_mc_6" value="a"> a) Information overload</label>
+            <label><input type="radio" name="ch5_mc_6" value="b"> b) Lack of openness between managers and employees</label>
+            <label><input type="radio" name="ch5_mc_6" value="c"> c) Ineffective upward communication</label>
+            <label><input type="radio" name="ch5_mc_6" value="d"> d) Resistance to change</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: c) Ineffective upward communication</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">7) An example of downward communication is: <span class="citation">[cite: 84]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch5_mc_7" value="a"> a) A manager asking employees for suggestions.</label>
+            <label><input type="radio" name="ch5_mc_7" value="b"> b) Employees discussing a project among themselves. <span class="citation">[cite: 86]</span></label>
+            <label><input type="radio" name="ch5_mc_7" value="c"> c) A manager giving instructions to employees. <span class="citation">[cite: 84]</span></label>
+            <label><input type="radio" name="ch5_mc_7" value="d"> d) A department head coordinating with another department head.</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: c) A manager giving instructions to employees.</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">8) An example of upward communication is: <span class="citation">[cite: 85]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch5_mc_8" value="a"> a) A manager giving instructions to employees.</label>
+            <label><input type="radio" name="ch5_mc_8" value="b"> b) Employees discussing a project among themselves.</label>
+            <label><input type="radio" name="ch5_mc_8" value="c"> c) A manager coordinating with another department head. <span class="citation">[cite: 85]</span></label>
+            <label><input type="radio" name="ch5_mc_8" value="d"> d) An employee submitting a report to their supervisor. <span class="citation">[cite: 87]</span></label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: d) An employee submitting a report to their supervisor.</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">9) An important function of horizontal communication is to: <span class="citation">[cite: 88, 89]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch5_mc_9" value="a"> a) Provide instructions to employees.</label>
+            <label><input type="radio" name="ch5_mc_9" value="b"> b) Gather feedback from employees.</label>
+            <label><input type="radio" name="ch5_mc_9" value="c"> c) Coordinate work among units. <span class="citation">[cite: 89]</span></label>
+            <label><input type="radio" name="ch5_mc_9" value="d"> d) Resolve conflicts between managers and subordinates.</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: c) Coordinate work among units.</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">10) Informal communication is often referred to as: <span class="citation">[cite: 90]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch5_mc_10" value="a"> a) The grapevine</label>
+            <label><input type="radio" name="ch5_mc_10" value="b"> b) Downward communication</label>
+            <label><input type="radio" name="ch5_mc_10" value="c"> c) Upward communication</label>
+            <label><input type="radio" name="ch5_mc_10" value="d"> d) Horizontal communication</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: a) The grapevine</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">11) An important function of informal communication is to: <span class="citation">[cite: 91]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch5_mc_11" value="a"> a) Provide formal instructions.</label>
+            <label><input type="radio" name="ch5_mc_11" value="b"> b) Facilitate official decision-making. <span class="citation">[cite: 91]</span></label>
+            <label><input type="radio" name="ch5_mc_11" value="c"> c) Help employees solve problems.</label>
+            <label><input type="radio" name="ch5_mc_11" value="d"> d) Maintain strict hierarchical control.</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: c) Help employees solve problems.</div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">12) Which of the following is NOT a potential benefit of informal communication? <span class="citation">[cite: 92]</span></p>
+        <div class="options">
+            <label><input type="radio" name="ch5_mc_12" value="a"> a) It can help employees feel connected.</label>
+            <label><input type="radio" name="ch5_mc_12" value="b"> b) It can provide a faster way to spread information. <span class="citation">[cite: 93]</span></label>
+            <label><input type="radio" name="ch5_mc_12" value="c"> c) It can always be relied upon for accuracy.</label>
+            <label><input type="radio" name="ch5_mc_12" value="d"> d) It can help employees learn from each other. <span class="citation">[cite: 94]</span></label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Correct Answer: c) It can always be relied upon for accuracy.</div>
+    </div>
+
+</div>
+
+<script>
+    function showAnswer(btn) {
+        var answerDiv = btn.nextElementSibling;
+        if (answerDiv.style.display === 'none' || answerDiv.style.display === '') {
+            answerDiv.style.display = 'block';
+            btn.textContent = 'Hide Answer';
+        } else {
+            answerDiv.style.display = 'none';
+            btn.textContent = 'Show Answer';
+        }
+    }
+</script>
+
+</body>
+</html>
